@@ -1,0 +1,9 @@
+---
+applications:
+- name: detect-version 
+  memory: 128M
+  buildpack: binary_buildpack
+  health_check: none
+  command: powershell .\\detect.ps1
+  no-route: true
+  stack: windows2012R2        
