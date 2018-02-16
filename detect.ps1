@@ -14,4 +14,6 @@ Select PSChildName, Version, Release, @{
         {$_ -gt 394806} { [Version]"Undocumented 4.6.2 or higher, please update script" }
       }
     }
-}
+} | Out-String
+
+Read-Host "Running..."
